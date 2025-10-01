@@ -17,7 +17,11 @@
 #define SECSID_WILD			0xffffffff /* wildcard SID */
 #define SECCLASS_NULL			0x0000 /* no class */
 
+#define PROCESS2__NNP_TRANSITION       0x00000001
+#define PROCESS2__NOSUID_TRANSITION    0x00000002
+
 /* Identify specific policy version changes */
+#define SECCLASS_PROCESS2 3
 #define POLICYDB_VERSION_BASE		15
 #define POLICYDB_VERSION_BOOL		16
 #define POLICYDB_VERSION_IPV6		17
