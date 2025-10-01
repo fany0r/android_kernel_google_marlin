@@ -2269,7 +2269,6 @@ static int check_nnp_nosuid(const struct linux_binprm *bprm,
 	int nnp = (bprm->unsafe & LSM_UNSAFE_NO_NEW_PRIVS);
 	int nosuid = (bprm->file->f_path.mnt->mnt_flags & MNT_NOSUID);
 	int rc;
-	int u32;
 	
 	u32 av;
 
