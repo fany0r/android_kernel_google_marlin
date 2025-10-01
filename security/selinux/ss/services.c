@@ -2014,7 +2014,7 @@ static void security_load_policycaps(void)
 						  POLICYDB_CAPABILITY_OPENPERM);
 	selinux_policycap_alwaysnetwork = ebitmap_get_bit(&policydb.policycaps,
 						  POLICYDB_CAPABILITY_ALWAYSNETWORK);
-	elinux_policycap_nnp_nosuid_transition =
+	selinux_policycap_nnp_nosuid_transition =
 		ebitmap_get_bit(&policydb.policycaps,
 				POLICYDB_CAPABILITY_NNP_NOSUID_TRANSITION);
 
